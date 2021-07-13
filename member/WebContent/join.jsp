@@ -5,14 +5,13 @@
 <head>
 <meta charset="UTF-8">
 <title>OHMYGOT</title>
-<link rel="stylesheet" href="./css/login.css">
+<link rel="stylesheet" href="./css/join.css">
 <link
 	href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
 	rel="stylesheet">
-
 </head>
-
 <body>
+
 	<nav class="navbar">
 		<div class="navbar_logo">
 			<i class="fab fa-accusoft"></i> <a href="main.jsp">OHMYGOT</a>
@@ -34,21 +33,35 @@
 		<a href="#" class="navbar_toogleBtn"> <i class="fas fa-bars"></i>
 		</a>
 	</nav>
-	<div id="wraps">
+
+	<div id="wrap">
+
 		<header>
-			<h1>로 그 인</h1>
+			<h1>OHMYGOT 회원가입</h1>
 		</header>
 
-		<form action="main.jsp" id="login_form">
+		<form action="../userJoinAction.jsp" method="doGet" id="join_form">
 			<table>
 				<tr>
-					<td><label for="loginId">아 이 디</label> <input type="text"
-						id="id" placeholder="아이디">
+					<td><label for="userId">아이디</label> <input type="text" id="id"
+						placeholder="아이디" name="id">
 						<div class="msg"></div></td>
-					<td><label for="loginPw">비 밀 번 호</label> <input
-						type="password" id="pw" placeholder="비밀번호">
+					<td><label for="userPw">비밀번호</label> <input type="password"
+						id="pw" placeholder="비밀번호" name="pw">
 						<div class="msg"></div></td>
-					<td><input type="submit" value="로그인"></td>
+					<td><label for="userPw2">비밀번호 확인</label> <input
+						type="password" id="pw2" placeholder="비밀번호 확인" name="upw2">
+						<div class="msg"></div></td>
+					<td><label for="userName">이름</label> <input type="text"
+						id="name" placeholder="이름" name="name">
+						<div class="msg"></div></td>
+					<td><label for="userEmail">이메일</label> <input type="text"
+						id=email placeholder="이메일" name="email">
+						<div class="msg"></div></td>
+					<td><label for="userPhone">휴대폰번호</label> <input type="text"
+						id=phone placeholder="휴대폰번호" name="phone">
+						<div class="msg"></div></td>
+					<td><input type="submit" value="가입하기"></td>
 				</tr>
 			</table>
 		</form>
@@ -57,9 +70,10 @@
 	<script src="https://code.jquery.com/jquery-1.12.4.js"
 		integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
 		crossorigin="anonymous">
-        </script>
+		
+	</script>
 	<script src="https://kit.fontawesome.com/a639687fae.js"
 		crossorigin="anonymous"></script>
-	<script src="./js/login.js" defer></script>
+	<script src="./js/join.js" defer></script>
 </body>
 </html>
