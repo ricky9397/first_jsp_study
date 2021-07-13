@@ -39,7 +39,7 @@
 			<h1>로 그 인</h1>
 		</header>
 
-		<form action="main.jsp" id="login_form">
+		<form action="loginOK.jsp" method="post" id="login_form">
 			<table>
 				<tr>
 					<td><label for="loginId">아 이 디</label> <input type="text"

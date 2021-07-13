@@ -1,22 +1,22 @@
-package util;
+package Database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class DbUtil {
-
+public class DBconn {
 	public static Connection getConnection() {
 		try {
 			String url = "jdbc:oracle:thin:@localhost:1521:xe";
-			String dbid = "hr";
-			String dbpw = "tiger";
+			String id = "hr";
+			String pw = "tiger";
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			return DriverManager.getConnection(url, dbid, dbpw);
-		} catch (Exception e) {
+			return DriverManager.getConnection(url, id, pw);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
 		return null;
 	}
-
 }

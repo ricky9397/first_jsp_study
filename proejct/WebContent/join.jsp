@@ -40,7 +40,7 @@
 			<h1>OHMYGOT 회원가입</h1>
 		</header>
 
-		<form action="../userJoinAction.jsp" method="doGet" id="join_form">
+		<form action="joinOK.jsp" method="post" id="join_form">
 			<table>
 				<tr>
 					<td><label for="userId">아이디</label> <input type="text" id="id"
