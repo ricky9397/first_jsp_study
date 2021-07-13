@@ -43,10 +43,10 @@
 			<table>
 				<tr>
 					<td><label for="loginId">아 이 디</label> <input type="text"
-						id="id" placeholder="아이디">
+						id="id" placeholder="아이디" name="id">
 						<div class="msg"></div></td>
 					<td><label for="loginPw">비 밀 번 호</label> <input
-						type="password" id="pw" placeholder="비밀번호">
+						type="password" id="pw" placeholder="비밀번호" name="pw">
 						<div class="msg"></div></td>
 					<td><input type="submit" value="로그인"></td>
 				</tr>
